@@ -1,0 +1,13 @@
+#headerHome {
+  width: 100%;
+}
+
+#footerHome {
+  background-color: #693d3d;
+  color: #DDDDDD;
+  padding: 3% 4% 2% 4%;
+}
+
+#footerHome p {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,59 @@
+<h1 class="display-4">Enter Faculty Publication Details</h1>
+<div class="row">
+  <div class="col-8 mx-auto mt-5 mb-5">
+
+    <!-- FORM -->
+
+    <div class="form-group">
+      <label for="l1">Name of Author: </label>
+      <input type="text" class="form-control" id="l1" aria-describedby="emailHelp" #l1 [(ngModel)]="obj.name">
+
+    </div>
+
+    <div class="form-group">
+      <label>Faculty Department:</label><br>
+      <select class="form-select" aria-label="Default select example" #l2 [(ngModel)]="obj.dept">
+        <option selected value="CSE">CSE</option>
+        <option value="IT">IT</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="l3">Title of Publication: </label>
+      <input type="text" class="form-control" id="l3" aria-describedby="emailHelp" #l3 [(ngModel)]="obj.title">
+    </div>
+
+    <div class="form-group">
+      <label>Select Type of Publication</label><br>
+      <select class="form-select" aria-label="Default select example" #l4 [(ngModel)]="obj.type">
+        <option selected value="Journal">Journal</option>
+        <option value="Conference">Conference</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="l5">Publication Details: </label>
+      <input type="text" class="form-control" id="l5" aria-describedby="emailHelp" #l5 [(ngModel)]="obj.details">
+    </div>
+
+    <div class="form-group">
+      <label for="l6">Year: </label>
+      <input type="text" class="form-control" id="l6" aria-describedby="emailHelp" #l6 [(ngModel)]="obj.year">
+
+    </div>
+
+    <div class="form-group">
+      <label for="l7">URL: </label>
+      <input type="text" class="form-control" id="l7" aria-describedby="emailHelp" #l7 [(ngModel)]="obj.url">
+
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="addPublication()">Submit</button>
+
+  </div>
+</div>
+
+
+<!-- l1.value,l2.value,l3.value,l4.value,l5.value,l6.value,l7.value -->
